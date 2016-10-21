@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style>
+  body,html{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  img{
+    height: 100%;
+    width: 80%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+  }
+  /*@font-face {
+    font-family: 'NexaFreeBoldwebfont';
+    src: url('../fonts/NexaFreeBoldwebfont.eot');
+    src: local('resources/fonts/NexaFreeBoldwebfont'), url('../fonts/NexaFreeBoldwebfont.woff') format('woff'), url('../fonts/NexaFreeBoldwebfont.ttf') format('truetype');
+}*/
+  @font-face{
+    font-family:font1;
+    src:url('trashco.ttf');
+  }
+  @font-face{
+    font-family:earwig;
+    src:url('earwig factory rg.ttf');
+  }
+  body
+  {
+    background-color: #005e80;
+  }
+  #register{
+    /*background-color: red;*/
+    height: 25%;
+    width: 15%;
+    position: absolute;
+    bottom: 20%;
+    right: 22%;
+    text-align: center;
+    font-size: 40px;
+    font-family: Impact, Charcoal, sans-serif;
+    text-decoration: none;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  #heading{
+    height: 15%;
+    width: 100%;
+    position: absolute;
+    background-color: #004b66;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    padding-top:3%;
+    /*font-family: NexaFreeBoldwebfont, sans-serif !important;*/
+    /*font-family: Verdana, Geneva, sans-serif;*/
+    font-family: earwig;
+    }
+    #main{
+    opacity: 1;
+    animation-name: opacity;
+    animation-duration: 6s;
+    /*transition-duration: 2s;
+    transition-timing-function: linear;*/
+  }
+  #text{
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 45%;
+    color: white;
+    font-size: 50px;
+    transform: scale(0);
+    animation-name: showtext;
+    animation-duration: 4s;
+  }
+  #date{
+    height: 20%;
+    width: 45%;
+    position: absolute;
+    /*background-color: red;*/
+    left: 10%;
+    top: 23%;
+    color: black;
+    font-size: 40px;
+    padding-left: 20px;
+    font-family: "Lucida Console",Monaco,monospace;
+    /*font-family: font1;*/
+  }
+  #venue{
+    height: 20%;
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    font-family: "Lucida Console",Monaco,monospace;
+    font-size: 40px;
+    padding-left: 20px;
+    /*background-color: red;*/
+  }
+  #content{
+    height: 40%;
+    width: 40%;
+    background-color: #8cd98c;
+    position: absolute;
+    top: 32%;
+    left: 12%;
+    border-radius: 20px;
+    border: solid 2px #008080;
+    padding: 20px;
+    font-family: arial;
+    font-size: 20px;
+  }
+  @keyframes showtext{
+    0%{
+      transform: scale(0);
+    }
+    50%{
+      transform: scale(1);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+  @keyframes opacity{
+    0%{
+      opacity: 1;
+    }
+    5%{
+      opacity: 0.05;
+    }
+    90%{
+      opacity: 0.05;
+    }
+    100%{
+      opacity: 0.8;
+    }
+  }
+  </style>
+  <body>
+    <div id="main">
+    <img src="android.jpg">
+    </img>
+    <div id="heading">ANDROID APP DEVELOPMENT WORKSHOP</div>
+    <div id="date">31<super>st</super> October onwards...</div>
+    <div id="register">
+      <a href="#">REGISTER HERE</a>
+    </div>
+    <div id="venue">VENUE : E-101/102</div>
+    <div id="content">
+      <u>PRE-REQUISITES</u> :
+      <ul>
+        <li>...</li>
+        <li>...</li>
+      </ul>
+      <u>TOPICS TO BE COVERED</u> :
+      <ul>
+      <li>...</li>
+      <li>...</li>
+      </ul>
+    </div>
+  </div>
+  <div id="text">Still downloading apps from the Google Play Store ?<br>Its time to make your own.</div>
+  </body>
+  <script>
+
+  </script>
+</html>
